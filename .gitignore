@@ -1,0 +1,24 @@
+# ROS build and temp folders
+build/
+devel/
+install/
+logs/
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# IDE/editor junk
+.vscode/
+.idea/
+*.swp
+*.bak
+*.tmp
+
+# OS-generated files
+.DS_Store
+Thumbs.db
+
+# Auth and secrets
+credentials.json
+token.json

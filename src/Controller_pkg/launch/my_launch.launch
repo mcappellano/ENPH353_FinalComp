@@ -1,0 +1,13 @@
+<launch>
+   <!--My Package launch file -->
+    <!-- <node pkg="Controller_pkg"
+         type="time_trials.py"
+         name="time_trials" 
+         output="screen">
+   </node> -->
+   <node pkg="Controller_pkg"
+         type="line_following.py"
+         name="line_following" 
+         output="screen">
+   </node>
+</launch>
