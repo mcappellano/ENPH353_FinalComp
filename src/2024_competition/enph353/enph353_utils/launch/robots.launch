@@ -1,0 +1,18 @@
+<launch>
+    <!-- Launch new Robbie URDF -->
+    <group ns="B1">
+        <param name="tf_prefix" value="B1_tf" />
+        <include file="$(find robbie)/launch/robbie.launch">
+            <arg name="init_pose" value="-x 5.5 -y 2.5 -z 0.2 -R 0.0 -P 0.0 -Y -1.57" />
+            <arg name="robot_name" value="B1" />
+        </include>
+
+        <!-- Launch the teleop_twist_keyboard node from the desktop.launch -->
+        <include file="$(find enph353_utils)/launch/desktop.launch"/>
+        <!-- <include file="/opt/ros/noetic/share/joy/launch/ps4joy.launch"/>    -->
+
+        <!-- Optional: Launch the camera feed (if you want to include it) -->
+        <!-- <node name="camera_node" pkg="your_camera_pkg" type="camera_node_type" output="screen" /> -->
+
+    </group>
+</launch>
