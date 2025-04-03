@@ -34,8 +34,6 @@ def find_line_center():
         rospy.logwarn("No image frame received yet.")
         return [None, None, None]
 
-
-
     # HSV = cv2.cvtColor(current_frame, cv2.COLOR_BGR2HSV)
 
     # Define HSV range for detecting the grey road (Adjust values for better accuracy)

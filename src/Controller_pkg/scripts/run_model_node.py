@@ -91,12 +91,12 @@ class InferenceNode:
             twist = Twist()
             if prediction == 0:  # Left
                 twist.angular.z = 2.143588
-                twist.linear.x = 1.07179
+                twist.linear.x = 2
             elif prediction == 1:  # Forward
                 twist.linear.x = 1.07179
             elif prediction == 2:  # Right
                 twist.angular.z = -2.143588
-                twist.linear.x = 1.07179
+                twist.linear.x = 2
 
             self.pub.publish(twist)
 
