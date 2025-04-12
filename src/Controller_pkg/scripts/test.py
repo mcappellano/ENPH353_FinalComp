@@ -294,7 +294,7 @@ def model_init():
 
 def preprocess_image(cv_image):
     """Resize, normalize, and add batch/channel dimensions."""
-    resized = cv2.resize(cv_image, (45, 100))  # Keeps all 3 channels (BGR)
+    resized = cv2.resize(cv_image, (128, 128))  # Keeps all 3 channels (BGR)
     normalized = resized.astype(np.float32) / 255.0
     expanded = np.expand_dims(normalized, axis=0)  # Shape: (1, 128, 128, 3)
     return expanded
