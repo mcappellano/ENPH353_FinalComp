@@ -288,7 +288,7 @@ def text_extractor(image):
 
 def model_init():
     global model
-    model_path = "/home/fizzer/ros_ws/src/Controller_pkg/scripts/test_model.h5"
+    model_path = "/home/fizzer/ros_ws/src/Controller_pkg/scripts/my_model.h5"
     model = tf.keras.models.load_model(model_path)
     rospy.loginfo(f"✅ Loaded model from {model_path}")
 
